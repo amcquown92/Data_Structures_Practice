@@ -19,6 +19,46 @@ map
 filter
 reduce
 ```
+## Arguments
+## Default Arguments
+- Defined in the function signature with a value that will be used if the caller does not provide one.
+- They make parameters optional when calling the function.
+```py
+def greet(name="Guest"):  # name has a default value
+    print(f"Hello, {name}!")
+
+greet()            # Uses default → Hello, Guest!
+greet("Archie")    # Overrides default → Hello, Archie!
+```
+In Python, default arguments are only created once—when the function is defined, not each time it’s called.
+
+So if you use something mutable (like a list, dictionary, or set) as a default value, that same object will be reused every time you call the function without giving that argument.
+
+Example of the problem:
+```py
+def some_func(my_list=[]):
+    my_list.append(1)
+    return my_list
+
+print(some_func())  # [1]
+print(some_func())  # [1, 1]  ← same list as before!
+```
+
+How to fix it:
+Use None as the default, and then create a new list inside the function.
+```py
+def some_func(my_list=None):
+    if my_list is None:
+        my_list = []
+    my_list.append(1)
+    return my_list
+```
+
+✅ Rule to remember:
+
+Mutable types: list, dict, set → don’t use them directly as defaults.
+
+Immutable types: int, float, bool, str, tuple → safe to use as defaults.
 ### var args
 variable-length arguments, meaning that a function can accept varying nuber of arguments. Use the sytax *arg for 
 the arguments are collected into a tuple within the func
