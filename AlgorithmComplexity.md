@@ -1,13 +1,14 @@
 # Complexity Analysis
 # Table of Contents
 - [Order of Growth](#order-of-growth)
+- [Sort Examples](sort-examples)
 ## Order of Growth
 |Notation| Growth Order | Form taken in Code | Example |
 | :----- |--------------| :----------------- |:--------|
 | O(n)  |linear| `for` loops| linear search|
 |O(n²)| quadratic| nested loops| selection sort|
 |O(log n)|logarithmic||binary search|
-
+# Sort Examples
 ### Linear Sort
 linear, looking at every element, one at a time, as one does in a `for` loop
 ### Selection Sort
