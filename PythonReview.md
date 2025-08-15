@@ -1,6 +1,4 @@
-# Data_Structures_Practice
-
-## Notes from Python Review
+# Python Review
 Strings are immutable, once created they cannot be transformed, can be copied or altered into new variables.
 Strings are objects. String methods alwauys return new obejcts.
 ### The `in` operator
