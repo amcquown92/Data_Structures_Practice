@@ -19,6 +19,16 @@ n2 comparisons, n exchanges
 ### Binary Search
 logarithmic, requires sorted data, Gives O(log n) performance by eliminatng half the remaining items on each unsuccessful find attempt by adjusng the range of indices
 - Uses the order of the array to extrapolate each comparison
+
+To determine the speed of the binary search algorithm, we ask:
+>"How many times can you divide a collection of n elements in half?"
+
+| | |
+| :- | :- |
+| exponential | The function you get by repeated multiplication. Typically powers of two: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, etc. |
+
+
+
 ## Big O Notation
 used to characteize a fxn `f(x)` in terms of its growth rate `g(x)`. Specifically, used to indicated an upper bound on `f(x)`.
 ![Big O](https://github.com/user-attachments/assets/571695e0-271a-4d9a-875d-69827067c9da)
