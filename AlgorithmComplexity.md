@@ -1,7 +1,7 @@
 # Complexity Analysis
 # Table of Contents
 - [Order of Growth](#order-of-growth)
-- [Sort Examples](sort-examples)
+- [Sort Examples](#sort-examples)
 ## Order of Growth
 |Notation| Growth Order | Form taken in Code | Example |
 | :----- |--------------| :----------------- |:--------|
