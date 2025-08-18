@@ -5,8 +5,9 @@
 - [Big O Notation](#big-o-notation)
 - [Reasoning for Use of n](#reasoning-for-use-of-n)
 ## Order of Growth
-|Notation| Growth Order | Form taken in Code | Example |
+|Notation| Growth Order | What to look for in code| Example |
 | :----- |--------------| :----------------- |:--------|
+|O(1)| Constant complexity| inserting a element into a list, no loops not recursive, no functions called that scale with size|
 | O(n)  |linear| `for` loops| linear search|
 |O(n²)| quadratic| nested loops| selection sort|
 |O(log n)|logarithmic||binary search|
@@ -23,8 +24,7 @@ logarithmic, requires sorted data, Gives O(log n) performance by eliminatng half
 To determine the speed of the binary search algorithm, we ask:
 >"How many times can you divide a collection of n elements in half?"
 
-| | |
-| :- | :- |
+
 | exponential | The function you get by repeated multiplication. Typically powers of two: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, etc. |
 
 
@@ -41,3 +41,8 @@ where it might be found, so on average we would expect to search half the list. 
 expectation is still that you will have to perform about n/2 comparisons. Again, this value
 is proportional to the length of the list – if you double the length of the list, you would
 expect to do twice as much work. "
+## Big O examples
+
+| | |
+|---|---|---|
+
